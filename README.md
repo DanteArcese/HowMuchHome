@@ -58,7 +58,11 @@ Navigate to the site, fill in the required inputs, and take a look at the result
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Placeholder
+- [ ] Break down monthly payment into tax, insurance, and mortgage payments
+- [ ] Factor in PMI when down payment is less than 20%
+- [ ] Apply number formatting to user input
+- [ ] Add matrix to show how monthly payment changes as rates and home price change
+- [ ] Set default tax, insurance, and interest rates based on a user's location mortgage duration
 
 See the [open issues](https://github.com/DanteArcese/HowMuchHome/issues) for a full list of proposed features (and known issues).
 

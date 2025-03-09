@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How Much Home</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>How Much Home Can I Afford?</h1>
+        <p>Fill in the forms below to find out!</p>
+        <br><br>
+
+        <h2>Affordability Based on Down Payment</h2>
+        <form id="downPaymentForm">
+            <label for="cashOnHand">Cash on Hand:</label>
+            <input type="number" min="0.01" step="0.01" id="cashOnHand" name="cashOnHand" required>
+            <br><br>
+            
+            <label for="downPaymentPercent">Down Payment Percent:</label>
+            <input type="number" min="0.01" step="0.01" max="100" id="downPaymentPercent" name="downPaymentPercent" value="20" required>
+            <br><br>
+            
+            <label for="closingCostPercent">Closing Cost Percent:</label>
+            <input type="number" min="0" step="0.01" max="100" id="closingCostPercent" name="closingCostPercent" value="3">
+            <br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p>Based on the above, you can afford a <span id="downPaymentResult">$0</span> house.</p>
+        
+        <br><br>
+
+        <h2>Affordability Based on Monthly Payment</h2>
+        <form id="monthlyPaymentForm">
+            <label for="monthlyPaymentAmount">Monthly Payment Amount:</label>
+            <input type="number" min="0.01" step="0.01" id="monthlyPaymentAmount" name="monthlyPaymentAmount" required>
+            <br><br>
+            
+            <label for="monthlyPaymentYears">Mortgage Length (years):</label>
+            <input type="number" min="1" max="30" id="monthlyPaymentYears" name="monthlyPaymentYears" value="30" required>
+            <br><br>
+            
+            <label for="monthlyPaymentDownPayment">Down Payment Percent:</label>
+            <input type="number" min="0.01" step="0.01" max="100" id="monthlyPaymentDownPayment" name="monthlyPaymentDownPayment" value="20" required>
+            <br><br>
+            
+            <label for="monthlyPaymentTaxRate">Tax Rate:</label>
+            <input type="number" min="0.01" step="0.01" max="100" id="monthlyPaymentTaxRate" name="monthlyPaymentTaxRate" value="1.25">
+            <br><br>
+            
+            <label for="monthlyPaymentInsuranceRate">Insurance Rate:</label>
+            <input type="number" min="0.01" step="0.01" max="100" id="monthlyPaymentInsuranceRate" name="monthlyPaymentInsuranceRate" value="0.50">
+            <br><br>
+            
+            <label for="monthlyPaymentInterestRate">Interest Rate:</label>
+            <input type="number" min="0.01" step="0.01" max="100" id="monthlyPaymentInterestRate" name="monthlyPaymentInterestRate" value="6.50" required>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <p>Based on the above, you can afford a <span id="monthlyPaymentResult">$0</span> house.</p>
+
+        <script src="main.js"></script>
+    </body>
+</html>
